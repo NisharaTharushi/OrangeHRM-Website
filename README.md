@@ -86,7 +86,7 @@ OrangeHRM-Automation/
 │   ├── people_management_test.py
 │   └── ...
 │  
-├── pages/                            # 📄 Page Object classes (named *_page.py)
+├── pages/                            #  Page Object classes (named *_page.py)
 │   ├── home_page.py
 │   ├── contact_sales_page.py
 │   ├── free_trial_page.py
@@ -94,11 +94,11 @@ OrangeHRM-Automation/
 │   ├── people_management_page.py
 │   └── ...
 │
-├── Test_cases.md                     # 📋 Manual test cases in markdown table
-├── requirements.txt                  # 📦 Python dependencies
-├── conftest.py                       # 🔧 Pytest fixtures (browser setup)
-├── README.md                         # 📘 Project overview and instructions
-└── .gitignore                        # 🛑 Files to exclude from Git
+├── Test_cases.md                     #  Manual test cases in markdown table
+├── requirements.txt                  #  Python dependencies
+├── conftest.py                       #  Pytest fixtures (browser setup)
+├── README.md                         #  Project overview and instructions
+└── .gitignore                        #  Files to exclude from Git
 
 </pre>
 
