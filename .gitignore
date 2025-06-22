@@ -1,0 +1,34 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.env/
+env/
+.venv/
+.Python
+
+# IDE-specific
+.vscode/
+.idea/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Test reports / logs
+*.log
+*.report
+test-output/
+
+# Python cache
+*.pyc
+
+# Chrome driver downloads
+chromedriver.exe
+geckodriver.exe
+
+# Git
+.gitignore
