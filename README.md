@@ -103,9 +103,9 @@ OrangeHRM-Automation/
 
 ---
 
-## ▶ How to Run the Tests
+🚀 How to Run the Tests
+Clone the repository
 
-### 1. Install Dependencies
+git clone https://github.com/your-username/ecommerce-ui-testing.git
+cd ecommerce-ui-testing
 
-```bash
-pip install -r requirements.txt
