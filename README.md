@@ -96,7 +96,6 @@ OrangeHRM-Automation/
 │
 ├── Test_cases.md                     #  Manual test cases in markdown table
 ├── requirements.txt                  #  Python dependencies
-├── conftest.py                       #  Pytest fixtures (browser setup)
 ├── README.md                         #  Project overview and instructions
 └── .gitignore                        #  Files to exclude from Git
 
