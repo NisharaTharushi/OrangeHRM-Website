@@ -78,7 +78,7 @@ This includes:
 
 OrangeHRM-Automation/
 │
-├── tests/                            # ✅ Test scripts (named *_test.py)
+├── tests/                            # ✅ Test scripts 
 │   ├── home_test.py
 │   ├── contact_sales_test.py
 │   ├── free_trial_test.py
@@ -86,7 +86,7 @@ OrangeHRM-Automation/
 │   ├── people_management_test.py
 │   └── ...
 │  
-├── pages/                            #  Page Object classes (named *_page.py)
+├── pages/                            #  Page Object classes 
 │   ├── home_page.py
 │   ├── contact_sales_page.py
 │   ├── free_trial_page.py
