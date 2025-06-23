@@ -103,9 +103,11 @@ OrangeHRM-Automation/
 
 ---
 
-🚀 How to Run the Tests
-Clone the repository
+## 🚀 How to Run the Tests
 
-git clone https://github.com/your-username/ecommerce-ui-testing.git
-cd ecommerce-ui-testing
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/ecommerce-ui-testing.git
+   cd ecommerce-ui-testing
+
 
