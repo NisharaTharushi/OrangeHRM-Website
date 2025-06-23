@@ -1,4 +1,4 @@
-### General Language Selector Test Cases (GN)
+### General Website Behavior
 
 | Test Case ID | Test Case Description                        | Steps to Execute                              | Expected Result                                  |
 |--------------|---------------------------------------------|----------------------------------------------|-------------------------------------------------|
