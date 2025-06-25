@@ -5,7 +5,7 @@ class PeopleManagement():
         def __init__(self, driver):
          self.driver = driver
 
-         # Locators
+        # Locators
         people_management_text = (By.XPATH, "//h2[normalize-space()='People Management']")
         learn_more_button = (By.XPATH, "//a[@href='/en/solutions/people-management/hr-administration']//div[@class='link-text']//h6[contains(text(),'Learn More')]")
         hr_title = (By.XPATH, "//h1[normalize-space()='HR Administration']")
@@ -24,8 +24,8 @@ class PeopleManagement():
         custom_roles_image = (By.XPATH, "//div[contains(@role,'button')]//img[contains(@alt,'User Roles')]")
 
 
-        # people Management
-        print("---- People Management page----")
+        # people Management Section 
+        print("---- People Management Section----")
         def open_people_management_section(self):
             print("people Management Section")
             people = self.driver.find_element(*self.people_management_text)
@@ -33,6 +33,7 @@ class PeopleManagement():
             self.driver.execute_script("arguments[0].scrollIntoView(true);", people)
             time.sleep(3)
 
+        # Learn more button 
         def click_learn_more(self):
             learn_more = self.driver.find_element(*self.learn_more_button)
             self.driver.execute_script("arguments[0].scrollIntoView(true);", learn_more)
@@ -41,6 +42,7 @@ class PeopleManagement():
             print("Learn More button clicked to open HR Administration page")
             print("open HR Administration page after clicking People Management learn more button\n")
 
+        # HR administration page 
         def test_hr_administration_page(self):
             print("HR Administration page test")
             hr = self.driver.find_element(*self.hr_title)
@@ -55,6 +57,7 @@ class PeopleManagement():
             time.sleep(3)
             self.driver.back()
 
+        # Enhanced Security 
         def verify_enhanced_security(self):
             enhanced = self.driver.find_element(*self.enhanced_security)
             self.driver.execute_script("arguments[0].scrollIntoView(true);", enhanced)
@@ -67,6 +70,7 @@ class PeopleManagement():
             time.sleep(2)
             print("")
 
+        # Audit Trial 
         def verify_audit_trail(self):
             audit = self.driver.find_element(*self.audit_text)
             self.driver.execute_script("arguments[0].scrollIntoView(true);", audit)
@@ -77,6 +81,7 @@ class PeopleManagement():
             time.sleep(2)
             print("")
 
+        # Asset Tracking 
         def verify_asset_tracking(self):
             asset = self.driver.find_element(*self.asset_text)
             print("Asset Tracking text: ", asset.get_attribute('innerHTML'))
@@ -86,6 +91,7 @@ class PeopleManagement():
             time.sleep(2)
             print("")
 
+        # News and Policy 
         def verify_news_and_policy(self):
             news = self.driver.find_element(*self.news_text)
             print("News & HR Policy Publisher text: ", news.get_attribute('innerHTML'))
@@ -95,6 +101,7 @@ class PeopleManagement():
             time.sleep(2)
             print("")
 
+        # Notifictaions 
         def verify_notifications(self):
             notif = self.driver.find_element(*self.notification_text)
             print("Notifications text: ", notif.get_attribute('innerHTML'))
@@ -104,6 +111,7 @@ class PeopleManagement():
             time.sleep(2)
             print("")
 
+        # Customer User Roles
         def verify_custom_user_roles(self):
             custom = self.driver.find_element(*self.custom_roles_text)
             print("Custom User Roles text: ", custom.get_attribute('innerHTML'))
