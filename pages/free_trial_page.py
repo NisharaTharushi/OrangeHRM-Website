@@ -7,7 +7,7 @@ class FreeTrial:
          self.driver = driver
 
         
-        # locators
+        # Locators
         FREE_TRIAL_BUTTON = (By.ID,"Form_submitForm_EmailHomePage")
         REQUEST_BUTTON = (By.ID,"Form_submitForm_action_request")
         TITLE = (By.XPATH,"//h1[contains(text(),'Revolutionize Your Human Resource Management Experience')]")
@@ -30,7 +30,7 @@ class FreeTrial:
                 print("")
 
 
-        # request button 
+        # Request button 
         def request_button(self):
                 driver = self.driver
                 driver.find_element(*self.REQUEST_BUTTON).click()
@@ -38,7 +38,7 @@ class FreeTrial:
                 time.sleep(2)
 
 
-        # free trial page 
+        # Free trial page 
         def free_trial_page(self):
                 driver = self.driver
                 title = driver.find_element(*self.TITLE)
@@ -49,7 +49,7 @@ class FreeTrial:
                 print("")
 
 
-        # free trial form
+        # Free trial form
         def free_trial_form(self,user_name_input,full_name_input,email_input,phone_input,country_input):
                 print("---- Free trial form ----")
                 name = self.driver.find_element(*self.USER_NAME)
