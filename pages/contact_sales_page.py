@@ -1,6 +1,4 @@
 from selenium.webdriver.common.by import By
-
-# select
 from selenium.webdriver.support.ui import Select
 import time
 
@@ -90,6 +88,7 @@ class ContactSales:
             print("")
 
 
+        # Context
         def context_p(self):
             context = self.driver.find_element(*ContactSales.CONTEXT)
             for context in context.find_elements(By.TAG_NAME, "p"):
