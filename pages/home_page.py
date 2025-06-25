@@ -8,7 +8,7 @@ class Home:
         def __init__(self, driver):
          self.driver = driver
          
-        
+        # Locators 
         TITLE = (By.XPATH,"//h1[1]")
         LOGO = (By.XPATH,"//a[@class='navbar-brand nav-logo']")
         LANGUAGE = (By.XPATH,"//select[@name='locale']")
@@ -25,9 +25,7 @@ class Home:
         COMMENT = (By.ID,"Form_getForm_Comment")
         RECAPTCHA = (By.XPATH,"//body")
         SUBMIT = (By.ID, "Form_getForm_action_submitForm")
-        
         CONTEXT = (By.XPATH,"//div[@role='main']")
-        
         YOU_TUBE_IFRAME = (By.CSS_SELECTOR, "div.homepage-hrforall-video iframe")
         YOUTUBE_PLAY_BUTTON = (By.CSS_SELECTOR, "button.ytp-large-play-button")
 
@@ -40,7 +38,7 @@ class Home:
             time.sleep(2)
             print("")
 
-
+        # logo 
         def logo(self):
             logo = self.driver.find_element(By.XPATH,"//a[@class='navbar-brand nav-logo']")
             print("logo href value is ",logo.get_attribute("href"))
@@ -49,6 +47,7 @@ class Home:
             print("")
 
 
+        # language button 
         def language(self):
             language = self.driver.find_element(*Home.LANGUAGE)
             language.click()
@@ -62,7 +61,8 @@ class Home:
             time.sleep(2)
             print("")
             
-        
+
+        # Header
         def header(self):
             header = self.driver.find_element(*Home.HEADER)
             print("Header opened")
@@ -72,6 +72,7 @@ class Home:
             print("")
 
 
+        # Book a Demo form 
         def book_demo(self,name_input,phone_input,email_input,company_name_input,country_input,no_of_employees_input):    
             book_demo = self.driver.find_element(*Home.BOOK_DEMO)
             book_demo.click()
@@ -136,14 +137,14 @@ class Home:
             time.sleep(10)
             print("")
 
-
+        # back to home 
         def back_to_home(self):
             self.driver.get("https://www.orangehrm.com/")
             print("Back to home page")
             time.sleep(2)
             print("")
 
-
+        # Context 
         def context(self):
             print("Context")
             context = self.driver.find_element(*Home.CONTEXT)
