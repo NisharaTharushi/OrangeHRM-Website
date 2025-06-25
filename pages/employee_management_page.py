@@ -84,28 +84,34 @@ class EmployeeManagementPage:
         print("Staff Schedule image: ",self.driver.find_element(*self.STAFF_SCHEDULE_IMAGE).is_displayed())
         print("")
 
+    # disciplinary text
     def disciplinary_text(self):
         self.driver.find_element(*self.DISCIPLINARY_TEXT)
         print("Disciplinary text: ",self.driver.find_element(*self.DISCIPLINARY_TEXT).text)
 
+    # disciplinary image
     def disciplinary_image(self):
         self.driver.find_element(*self.DISCIPLINARY_IMAGE)        
         print("Disciplinary image: ",self.driver.find_element(*self.DISCIPLINARY_IMAGE).is_displayed())
         print("")
 
+    # org chart text 
     def org_chart_text(self):
         self.driver.find_element(*self.ORG_CHART_TEXT)
         print("Org Chart text: ",self.driver.find_element(*self.ORG_CHART_TEXT).text)
 
+    # org chart image
     def org_chart_image(self):              
         self.driver.find_element(*self.ORG_CHART_IMAGE)
         print("Org Chart image: ",self.driver.find_element(*self.ORG_CHART_IMAGE).is_displayed())
         print("")
 
+    # corporate directory text 
     def corporate_directory_text(self):
         self.driver.find_element(*self.CORPORATE_DIRECTORY_TEXT)
         print("Corporate Directory text: ",self.driver.find_element(*self.CORPORATE_DIRECTORY_TEXT).text)
 
+    # corporate directory image 
     def corporate_directory_image(self):
         self.driver.find_element(*self.CORPORATE_DIRECTORY_IMAGE)
         print("Corporate Directory image: ",self.driver.find_element(*self.CORPORATE_DIRECTORY_IMAGE).is_displayed())
