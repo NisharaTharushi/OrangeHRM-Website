@@ -1,13 +1,11 @@
 from selenium.webdriver.common.by import By
 
-
 class EmployeeManagementPage:
     def __init__(self, driver):
         self.driver = driver
 
-    
-    print("---- Employee Management Page ----")
-    # Employee Management Page 
+
+    # locators 
     EMPLOYEE_MANAGEMENT_TITLE = (By.XPATH, "//h1[normalize-space()='Employee Management']")    
     EMPLOYEE_MANAGEMENT_DESCRIPTION = (By.XPATH, "//p[@class='platform-page-description text-center']")
     LEARN_MORE_BUTTON = (By.XPATH, "//a[@href='/en/solutions/people-management/employee-management']//div[@class='link-text']//p[contains(text(),'Learn More')]")
@@ -26,50 +24,61 @@ class EmployeeManagementPage:
     CORPORATE_DIRECTORY_TEXT = (By.XPATH, "//h2[normalize-space()='Corporate Directory']")
     CORPORATE_DIRECTORY_IMAGE = (By.XPATH, "//div[contains(@role,'button')]//img[contains(@alt,'Corporate Directory')]")
 
+    # Employee Management Page 
+    print("---- Employee Management Page ----")
 
+    # title 
     def employee_management_title(self):
         self.driver.find_element(*self.EMPLOYEE_MANAGEMENT_TITLE)
         print("Employee Management title: ",self.driver.find_element(*self.EMPLOYEE_MANAGEMENT_TITLE).text)
         print("")
 
+    # description
     def employee_management_description(self):
         self.driver.find_element(*self.EMPLOYEE_MANAGEMENT_DESCRIPTION)
         print("Employee Management description: ",self.driver.find_element(*self.EMPLOYEE_MANAGEMENT_DESCRIPTION).text)
         print("")
 
-
+    # demo button 
     def demo_button_top(self):
         self.driver.find_element(*self.DEMO_BUTTON_TOP)
         print("Demo button top: ",self.driver.find_element(*self.DEMO_BUTTON_TOP).text)
 
+    # demo bottom button
     def demo_button_bottom(self):
         self.driver.find_element(*self.DEMO_BUTTON_BOTTOM)
         print("Demo button bottom: ",self.driver.find_element(*self.DEMO_BUTTON_BOTTOM).text)
         self.driver.get("https://www.orangehrm.com/en/solutions/people-management/employee-management")
         print("")
 
+    # dashboard text
     def dashboard_text(self):
         self.driver.find_element(*self.DASHBOARD_TEXT)
         print("Dashboard text: ",self.driver.find_element(*self.DASHBOARD_TEXT).text)
 
+    # dashboard image 
     def dashboard_image(self):
         self.driver.find_element(*self.DASHBOARD_IMAGE)
         print("Dashboard image: ",self.driver.find_element(*self.DASHBOARD_IMAGE).is_displayed())
         print("")
 
+    # database text
     def employee_database_text(self):
         self.driver.find_element(*self.EMPLOYEE_DATABASE_TEXT)
         print("Employee Database text: ",self.driver.find_element(*self.EMPLOYEE_DATABASE_TEXT).text)
 
+    # database image
     def employee_database_image(self):
         self.driver.find_element(*self.EMPLOYEE_DATABASE_IMAGE)
         print("Employee Database image: ",self.driver.find_element(*self.EMPLOYEE_DATABASE_IMAGE).is_displayed())
         print("")
 
+    # staff schedule text 
     def staff_schedule_text(self):
         self.driver.find_element(*self.STAFF_SCHEDULE_TEXT)
         print("Staff Schedule text: ",self.driver.find_element(*self.STAFF_SCHEDULE_TEXT).text)
 
+    # staff schedule image 
     def staff_schedule_image(self):
         self.driver.find_element(*self.STAFF_SCHEDULE_IMAGE)
         print("Staff Schedule image: ",self.driver.find_element(*self.STAFF_SCHEDULE_IMAGE).is_displayed())
