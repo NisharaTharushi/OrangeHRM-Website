@@ -8,6 +8,8 @@ class ContactSales:
         def __init__(self, driver):
          self.driver = driver
 
+
+        # locators 
         CONTACTSALES_BUTTON = (By.XPATH,"//div[@class='d-flex web-menu-btn']//li[2]//a[1]")
         NAME = (By.ID,"Form_getForm_FullName")
         PHONE = (By.ID,"Form_getForm_Contact")
@@ -22,6 +24,7 @@ class ContactSales:
 
      
         print("---- Contact Sales Page ----")
+        
         # Contact Sales button
         def contact_sales_button(self):
             ContactSales_button = self.driver.find_element(*ContactSales.CONTACTSALES_BUTTON)
