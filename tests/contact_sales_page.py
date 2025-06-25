@@ -13,7 +13,7 @@ home = ContactSales(driver)
 
 home.contact_sales_button()
 home.contact_sales_form(
-    name_input = "nishara",
+    name_input = "Nishara",
     phone_input = "1234567890",
     email_input = "nishara@gmail.com",
     job_title_input = "QA Engineer" 
