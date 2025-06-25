@@ -15,7 +15,7 @@ home.title()
 home.logo()
 home.header()
 home.book_demo(
-    name_input = "nishara",
+    name_input = "Nishara",
     phone_input = "1234567890",
     email_input = "d2w0J@example.com",
     company_name_input = "OrangeHRM",
