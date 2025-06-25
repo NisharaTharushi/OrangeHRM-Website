@@ -11,7 +11,6 @@ driver.maximize_window()
 
 page = PeopleManagement(driver)
 
-# Test steps
 page.open_people_management_section()
 page.click_learn_more()
 page.test_hr_administration_page()
