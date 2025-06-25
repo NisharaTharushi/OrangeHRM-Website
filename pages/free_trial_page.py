@@ -1,13 +1,13 @@
 from selenium.webdriver.common.by import By
 import time
-# select
 from selenium.webdriver.support.ui import Select
-
 
 class FreeTrial:   
         def __init__(self, driver):
          self.driver = driver
+
         
+        # locators
         FREE_TRIAL_BUTTON = (By.ID,"Form_submitForm_EmailHomePage")
         REQUEST_BUTTON = (By.ID,"Form_submitForm_action_request")
         TITLE = (By.XPATH,"//h1[contains(text(),'Revolutionize Your Human Resource Management Experience')]")
@@ -20,7 +20,8 @@ class FreeTrial:
         
 
         print("---- Free trial page ----")
-        # Free trial
+        
+        # Free trial button 
         def free_trial_button(self):
                 driver = self.driver
                 driver.find_element(*self.FREE_TRIAL_BUTTON).click()
@@ -29,6 +30,7 @@ class FreeTrial:
                 print("")
 
 
+        # request button 
         def request_button(self):
                 driver = self.driver
                 driver.find_element(*self.REQUEST_BUTTON).click()
@@ -36,6 +38,7 @@ class FreeTrial:
                 time.sleep(2)
 
 
+        # free trial page 
         def free_trial_page(self):
                 driver = self.driver
                 title = driver.find_element(*self.TITLE)
@@ -45,7 +48,8 @@ class FreeTrial:
                 time.sleep(2)
                 print("")
 
-        
+
+        # free trial form
         def free_trial_form(self,user_name_input,full_name_input,email_input,phone_input,country_input):
                 print("---- Free trial form ----")
                 name = self.driver.find_element(*self.USER_NAME)
