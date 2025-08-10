@@ -2,7 +2,7 @@
 
 ### 🌐 Project Overview
 
-This repository contains **automated UI and functional test scripts** developed using **Python, Selenium WebDriver**, and the **Page Object Model (POM)** for:
+This project contains automated test scripts written in Python using Selenium WebDriver, the Page Object Model (POM) design pattern and Pytest for the demo healthcare appointment website.
 
 🔗 [OrangeHRM Website](https://www.orangehrm.com/)
 
@@ -68,8 +68,6 @@ Automation Tool: Selenium WebDriver
 
 Design Pattern: Page Object Model (POM)
 
-Testing Framework: Pytest
-
 Browser Drivers: ChromeDriver and GeckoDriver (Firefox)
 
 ---
@@ -110,4 +108,5 @@ OrangeHRM-Automation/
    ```bash
    git clone https://github.com/your-username/ecommerce-ui-testing.git
    cd ecommerce-ui-testing
+
 
