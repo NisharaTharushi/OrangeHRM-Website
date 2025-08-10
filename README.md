@@ -2,7 +2,7 @@
 
 ### 🌐 Project Overview
 
-This project contains automated test scripts written in Python using Selenium WebDriver, the Page Object Model (POM) design pattern and Pytest for the demo healthcare appointment website.
+This project contains automated test scripts written in Python using Selenium WebDriver, the Page Object Model (POM) design pattern for the demo healthcare appointment website.
 
 🔗 [OrangeHRM Website](https://www.orangehrm.com/)
 
@@ -108,5 +108,6 @@ OrangeHRM-Automation/
    ```bash
    git clone https://github.com/your-username/ecommerce-ui-testing.git
    cd ecommerce-ui-testing
+
 
 
