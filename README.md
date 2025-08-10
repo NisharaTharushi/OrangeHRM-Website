@@ -1,6 +1,6 @@
 ## 🔧 Selenium Test Automation for "OrangeHRM Website" ##
 
-# 🌐 Project Overview
+### 🌐 Project Overview
 
 This repository contains **automated UI and functional test scripts** developed using **Python, Selenium WebDriver**, and the **Page Object Model (POM)** for:
 
@@ -10,7 +10,7 @@ This repository contains **automated UI and functional test scripts** developed 
 
 ---
 
-## ✅ What This Project Covers
+### ✅ What This Project Covers
 
 I created **modular, reusable test scripts for each page and section of the website**. Each script covers:
 
@@ -62,14 +62,15 @@ This includes:
 
 ## 🧰 Tech Stack Used
 
-| Tool/Library         | Description                             |
-|----------------------|-----------------------------------------|
-|  Python 3.x          | Core programming language               |
-|  Selenium WebDriver  | For web automation                      |
-|  PyTest              | Testing framework                       |
-|  POM Pattern         | Page-level test architecture            |
-|  ChromeDriver        | For browser testing                     |
-|  GitHub              | Version control and code hosting        |
+Language: Python 3.x
+
+Automation Tool: Selenium WebDriver
+
+Design Pattern: Page Object Model (POM)
+
+Testing Framework: Pytest
+
+Browser Drivers: ChromeDriver and GeckoDriver (Firefox)
 
 ---
 
@@ -109,3 +110,4 @@ OrangeHRM-Automation/
    ```bash
    git clone https://github.com/your-username/ecommerce-ui-testing.git
    cd ecommerce-ui-testing
+
